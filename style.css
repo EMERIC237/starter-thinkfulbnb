@@ -226,13 +226,14 @@ footer p {
   #ideas .ideas-images {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   #ideas .ideas-images .column-left {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 149px;
+    padding-left: 0px;
   }
 
   #ideas .ideas-images .column-right {
@@ -240,6 +241,7 @@ footer p {
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 16px;
+    padding-right: 0px;
   }
   /*----host---*/
 
