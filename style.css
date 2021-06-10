@@ -38,6 +38,10 @@ section.alternate-background img {
   padding: 15px 0px;
 }
 
+.back-link{
+  text-decoration: none;
+}
+
 #ideas {
   display: flex;
   flex-direction: column;
@@ -128,6 +132,13 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+  border-radius:10px;
+  transition-duration: 0.4s;
+}
+
+form button:hover {
+  background-color: #4CAF50; /* Green */
+  color: rgb(116, 26, 26);
 }
 
 .row {
@@ -148,14 +159,15 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-/*display(more than 600px) for big screen like desktop*/
+/*display(more than 480px) for big screen like desktop*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   /* -------  Navigation ------- */
 
   header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #ff385c;
     padding: 10px 20px 0 20px;
@@ -169,6 +181,7 @@ footer p {
   /*form*/
   #stay form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -180,12 +193,12 @@ footer p {
     width: 25%;
   }
   /*-------About--------*/
-  section.alternate-background {
+  #about section.alternate-background {
     flex-direction: column;
     padding-left: 0px;
     padding-bottom: 2px;
   }
-  
+
   .row {
     flex-direction: column;
     margin-left: 10px;
@@ -245,37 +258,27 @@ footer p {
   }
   /*----host---*/
 
-  #host .alternate-background {
+  section#host.alternate-background {
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
+    align-items: stretch;
+    flex: 1;
   }
 
-  #host img {
-    width: 42%;
-  }
-
-  #host {
-    flex-direction: row;
-    justify-content: space-around;
-    /* padding-left: 0px; */
-    padding-bottom: 2px;
-  }
-
-  #host div{
+  #host .row{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 0px 10px 0px 10px;
+    flex: 1;
   }
 
-  .to-hide{
+  .to-hide {
     display: none;
   }
 }
 
-@media screen and (max-width:600px) {
-  .repeat-image{
+@media all and (max-width: 480px) {
+  .repeat-image {
     display: none;
   }
-  
 }
