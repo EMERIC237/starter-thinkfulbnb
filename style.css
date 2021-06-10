@@ -158,12 +158,13 @@ footer p {
   padding: 20px;
 }
 
+
 /* -------  Media Query ------- */
 /*display(more than 480px) for big screen like desktop*/
 
 @media screen and (min-width: 480px) {
-  /* -------  Navigation ------- */
 
+  /* -------  Navigation ------- */
   header {
     display: flex;
     flex-direction: row;
@@ -178,7 +179,8 @@ footer p {
     padding-top: 20px;
     margin-bottom: 10px;
   }
-  /*form*/
+
+  /*------form----------*/
   #stay form {
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +194,7 @@ footer p {
 
     width: 25%;
   }
+
   /*-------About--------*/
   #about section.alternate-background {
     flex-direction: column;
@@ -256,8 +259,8 @@ footer p {
     padding-left: 16px;
     padding-right: 0px;
   }
-  /*----host---*/
 
+  /*----host---*/
   section#host.alternate-background {
     display: flex;
     flex-direction: row;
@@ -276,6 +279,8 @@ footer p {
     display: none;
   }
 }
+
+/*Media query to remove the extra image on small screen(phone)*/
 
 @media all and (max-width: 480px) {
   .repeat-image {
